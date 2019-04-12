@@ -1,11 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import Bananas from "./Bananas"
-import Blink from "./Blink"
+//import Bananas from "./Bananas"
+//import Blink from "./Blink"
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
     title: 'Welcome',
+    headerStyle: {
+      backgroundColor: '#f4511e',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
   };
   render() {
     const {navigate} = this.props.navigation;
@@ -23,8 +30,6 @@ class ProfileScreen extends React.Component {
     return (
    
       <View style={styles.container}>
-        <Bananas />
-        <Blink />
         <Text>Open up App.js to start working on your app!</Text>
       </View>
     );
